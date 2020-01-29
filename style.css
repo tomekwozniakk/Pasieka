@@ -425,7 +425,7 @@ footer i {
 
 }
 
-@media  (min-width:700px) {
+@media  (min-width:750px) {
 
     .burger {
         top: 40px;
@@ -460,7 +460,7 @@ footer i {
 }
 
 @media (min-height:700px),
-(min-width:700px) {
+(min-width:750px) {
 
     nav a {
         font-size: 1.4rem;
