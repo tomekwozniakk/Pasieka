@@ -1,3 +1,4 @@
+
 header.about_us::after {
     background-image: url(images/galeria/smoke.jpg);
 }
@@ -88,7 +89,7 @@ section:hover:after {
     width: 100%;
     height: 100%;
     transform: translatey(-100vh);
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.8);
     z-index: 11;
     transition: .3s linear;
 }
@@ -102,7 +103,11 @@ section:hover:after {
 }
 
 .popup_wrap div.active {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 2vh;
+    column-gap: 1vh;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -130,6 +135,7 @@ div.wrap.blur {
     height: 40px;
     border: 2px solid black;
     border-radius: 50%;
+    background-color: white;
     z-index: 12;
 }
 
@@ -138,23 +144,49 @@ div.wrap.blur {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 1.2rem;
 }
 
 .text {
     display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(252, 223, 200, 0.7), rgba(243, 201, 192, 0.7));
+}
+
+.text p {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translatey(-50%);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 5px;
+}
+
+div.img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(243, 232, 207, 0.7);
+}
+
+div.img img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1rem;
-    text-align: center;
+    /* filter: grayscale(); */
 }
 
 .popup_wrap div.active .text {
     display: block;
 }
-
-
 
 @media (orientation:landscape) {
 .about {
@@ -168,4 +200,11 @@ div.wrap.blur {
 .about div {
     position: absolute;
 }
+
+.popup_wrap div.active {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
 }
