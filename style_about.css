@@ -23,6 +23,7 @@ header.about_us::after {
     width: 100%;
     transform: translate(0, 0);
     opacity: 1;
+    cursor: pointer;
 }
 
 .about div {
@@ -79,6 +80,81 @@ section:hover:after {
 .four::after {
     background-image: url(images/galeria/house_sunset.jpg);
 }
+
+.popup_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translatey(-100vh);
+    background-color: rgba(255,255,255,0.7);
+    z-index: 11;
+    transition: .3s linear;
+}
+
+.popup_wrap.active {
+    transform: translatey(0);
+}
+
+.popup_wrap div {
+    display: none;
+}
+
+.popup_wrap div.active {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 80%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+}
+
+div.wrap.blur {
+    filter: blur(2px);
+}
+
+.close {
+    display: none;
+}
+
+.close.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: 12;
+}
+
+.close.active i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.popup_wrap div.active .text {
+    display: block;
+}
+
+
 
 @media (orientation:landscape) {
 .about {
