@@ -15,7 +15,7 @@ $("section").on("click", function() {
 $("button.close").on("click", function() {
     $(".popup_wrap, .popup_wrap div").removeClass("active");
     $("div.wrap").removeClass("blur");
-    $this.removeClass("active")
+    $("button.close").removeClass("active")
 })
 
 $(".one").on("click", function() {
