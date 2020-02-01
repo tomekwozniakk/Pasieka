@@ -127,7 +127,6 @@ body {
     font-size: 16px;
 }
 
-
 .wrap {
     display: grid;
     grid-template-columns: 1fr;
@@ -227,10 +226,11 @@ header::after {
     min-height: 360px;
     background-image: url(images/galeria/working_in_sunset.jpg);
     background-position: center;
-    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* filter: sepia(70%) ; */
     z-index: -100;
 }
 
