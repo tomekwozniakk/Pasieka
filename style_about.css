@@ -3,10 +3,10 @@ header.about_us::after {
 }
 
 .about {
-    height: 160vh;
-    min-height: 360px;
     position: relative;
     display: grid;
+    height: 160vh;
+    min-height: 360px;
     grid-template-columns: 1fr;
     row-gap: 2vh;
     column-gap: 5vh;
