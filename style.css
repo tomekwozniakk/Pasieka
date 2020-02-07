@@ -272,12 +272,16 @@ main {
 main::after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 130vh;
     min-height: 400px;
     background-image: url(images/galeria/garden.jpg);
     background-position: center;
     background-size: cover;
+    background-position: center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -100;
