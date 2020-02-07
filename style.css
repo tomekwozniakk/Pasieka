@@ -233,6 +233,7 @@ header::after {
     min-height: 360px;
     background-image: url(images/galeria/working_in_sunset.jpg);
     background-position: center;
+    background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
