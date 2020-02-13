@@ -97,7 +97,7 @@ section:hover:after {
     position: fixed;
     top: 0;
     left: 0;
-    transform: translate(-40%, -40%);
+    transform: translate(-30%, -30%);
     width: 40px;
     height: 40px;
     border: 2px solid rgb(0, 0, 0);
@@ -118,7 +118,7 @@ section:hover:after {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     max-height: 200vh;
     transform: translatey(-200vh);
@@ -144,10 +144,10 @@ section:hover:after {
     position: fixed;
     left: 50%;
     top: 50%;
-    height: 95%;
-    width: 91%;
+    height: 95vh;
+    width: 91vw;
     transform: translate(-50%, -50%);
-    border: 2px solid rgb(150, 150, 150);
+    border: 2px solid rgb(189, 104, 104);
     border-radius: 20px;
 }
 
@@ -178,9 +178,9 @@ div.wrap.blur {
     width: 100%;
     top: 50%;
     transform: translatey(-50%);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-align: justify;
-    padding: 5px;
+    padding: 10px;
 }
 
 div.img {
@@ -205,21 +205,22 @@ div.img img {
 }
 
 .popup_two .img img {
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -50%);
 }
 
 .popup_two .text {
     grid-template-areas:
-     "h2 text"
+     "img h2"
      "img text";
-     grid-template-rows: 1fr 4fr;
+     grid-template-rows: 1fr 7fr;
+     grid-template-columns: 1fr 3fr;
 }
 
 .popup_two .text:nth-of-type(2) {
     grid-template-areas:
-     "text h2"
+     "h2 img"
      "text img";
-     grid-template-columns: 2fr 1fr;
+     grid-template-columns: 3fr 1fr;
 }
 
 
@@ -237,12 +238,17 @@ div.img img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    padding-top: 10px;
 }
 
 @media (orientation:landscape) {
+    .close {
+        
+    }
+
     .about {
         height: 100vh;
         display: grid;
