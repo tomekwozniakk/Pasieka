@@ -112,7 +112,7 @@ q {
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Marck Script', cursive;
 }
 
 a {
@@ -175,6 +175,7 @@ nav {
     height: 50vh;
     min-height: 200px;
     text-align: center;
+    font-family: 'Lobster', cursive;
     border: 1px solid black;
     border-top: none;
     background-color: rgb(255, 242, 212);
@@ -227,7 +228,7 @@ header::after {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     max-width: 1280px;
     height: 100vh;
     min-height: 360px;
@@ -260,11 +261,12 @@ h1 {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+    font-family: 'Lobster', cursive;
 }
 
 /* main */
 
-main {
+main.index, main.about {
     position: relative;
     display: flex;
     height: 130vh;
@@ -273,12 +275,12 @@ main {
     justify-content: space-between;
 }
 
-main::after {
+main.index::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     max-width: 1280px;
     height: 130vh;
     min-height: 400px;
@@ -312,6 +314,10 @@ section.active {
     position: relative;
     flex-basis: 20%;
     background-color: rgb(243, 232, 207);
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
 }
 
 .left h2 {

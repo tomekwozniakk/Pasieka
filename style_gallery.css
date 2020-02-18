@@ -1,0 +1,35 @@
+header.gallery {
+    height: 60vh;
+}
+
+header.gallery::after {
+    height: 60vh;
+    background-image: url(images/galeria/gallery_bckground.jpg);
+    background-position: top;
+} 
+
+main.gallery::after {
+    content: none;
+}
+
+main.gallery {
+        position: relative;
+        display: flex;
+        height: auto;
+        min-height: 400px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+}
+
+.pic {
+    flex: 50%;
+    max-height: 50vw;
+    flex-grow: 1;
+    padding: 10px 5px;
+    overflow: hidden;
+}
+
+.pic img {
+    width: 100%;
+}
