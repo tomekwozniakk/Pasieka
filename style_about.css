@@ -114,6 +114,10 @@ main.about section:hover:after {
     font-size: 1.2rem;
 }
 
+.close:hover {
+    cursor: pointer;
+}
+
 .popup_wrap {
     position: fixed;
     top: 0;
@@ -241,7 +245,7 @@ div.img img {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.2rem;
-    font-family: 'Lobster', cursive;
+    font-weight: bold;
     text-transform: uppercase;
     padding-top: 10px;
 }
@@ -309,7 +313,7 @@ div.img img {
 @media (min-width:720px) {
 
     .text p {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .text h3 {
@@ -323,7 +327,7 @@ div.img img {
     }
     
     .text p {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -333,6 +337,6 @@ div.img img {
     }
     
     .text p {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 }
