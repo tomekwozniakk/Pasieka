@@ -14,15 +14,15 @@ $(document).on('scroll', function(){
     const section3FromTop = $section3.offset().top;
     const section3Height = $section3.outerHeight();
 
-    if (scrollValue > section1FromTop + section1Height - windowHeight) {
+    if (scrollValue > section1FromTop + section1Height - windowHeight*1.2) {
         $section1.addClass('active');
     }
 
-    if (scrollValue > section2FromTop + section2Height - windowHeight) {
+    if (scrollValue > section2FromTop + section2Height - windowHeight*1.2) {
         $section2.addClass('active');
     }
 
-    if (scrollValue > section3FromTop + section3Height - windowHeight) {
+    if (scrollValue > section3FromTop + section3Height - windowHeight*1.2) {
         $section3.addClass('active');
     }
 

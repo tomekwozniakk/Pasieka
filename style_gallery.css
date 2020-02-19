@@ -19,17 +19,25 @@ main.gallery {
         min-height: 400px;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
 }
 
-.pic {
+.column {
     flex: 50%;
-    max-height: 50vw;
-    flex-grow: 1;
-    padding: 10px 5px;
+    flex-grow: 0;
+    padding: 0px 3px;
     overflow: hidden;
 }
 
-.pic img {
+img {
     width: 100%;
+    margin-top: 6px;
+    vertical-align: middle;
+    border-radius: 20px; 
+}
+
+@media (min-width:700px) {
+    .column {
+        flex: 25%;
+    }
 }

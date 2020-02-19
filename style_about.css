@@ -26,6 +26,8 @@ main.about section {
     transform: translate(0, 0);
     opacity: 1;
     cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 main.about div {
@@ -61,12 +63,12 @@ main.about section::after {
     background-repeat: no-repeat;
     filter: grayscale(100%);
     z-index: -100;
-    transition: .5s linear;
-    border-radius: 20px;
+    transition: .3s linear;
 }
 
 main.about section:hover:after {
     filter: none;
+    transform: scale(1.05);
 }
 
 .one::after {
