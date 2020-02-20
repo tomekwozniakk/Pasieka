@@ -31,3 +31,31 @@ $(document).on('scroll', function(){
     }
 
 })
+
+// header slider
+
+let activeElement = 0;
+const timer = 8000;
+
+// elements
+
+const backgroundImg = document.querySelector("header .img");
+const title = document.querySelector("header .title h1");
+
+// tables
+
+const imagesUrl = ['images/galeria/working_in_sunset.jpg', 'images/galeria/smoke.jpg'];
+const titles = ['Pasieka Darz Ul', 'Zapraszamy!'];
+
+// function
+
+function imageSlider() {
+    activeElement++;
+    if (activeElement == 2) {
+        activeElement = 0;
+    }
+    backgroundImg.style.backgroundImage = 'url(' + imagesUrl[activeElement] + ')';
+    title.textContent = titles[activeElement];
+}
+
+setInterval(imageSlider, timer);

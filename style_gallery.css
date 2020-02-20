@@ -2,7 +2,7 @@ header.gallery {
     height: 60vh;
 }
 
-header.gallery::after {
+header.gallery .img {
     height: 60vh;
     background-image: url(images/galeria/gallery_bckground.jpg);
     background-position: top;

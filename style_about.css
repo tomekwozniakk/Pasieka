@@ -1,4 +1,4 @@
-header.about_us::after {
+header.about_us .img {
     background-image: url(images/galeria/smoke.jpg);
 }
 
