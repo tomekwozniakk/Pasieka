@@ -5,7 +5,7 @@ header.gallery {
 header.gallery .img {
     height: 60vh;
     background-image: url(images/galeria/gallery_bckground.jpg);
-    background-position: top;
+    background-position: center;
 } 
 
 main.gallery::after {

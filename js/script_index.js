@@ -30,7 +30,7 @@ $(document).on('scroll', function(){
         $('section').removeClass('active');
     }
 
-})
+});
 
 // header slider
 
@@ -44,7 +44,7 @@ const title = document.querySelector("header .title h1");
 
 // tables
 
-const imagesUrl = ['images/galeria/working_in_sunset.jpg', 'images/galeria/smoke.jpg'];
+const imagesUrl = ['images/galeria/working_in_sunset.jpg', 'images/galeria/parcel2.jpg'];
 const titles = ['Pasieka Darz Ul', 'Zapraszamy!'];
 
 // function
