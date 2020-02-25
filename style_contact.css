@@ -20,6 +20,7 @@ main.contact {
     display: flex;
     flex-direction: column;
     height: 65vh;
+    min-height: 400px;
     opacity: 1;
     transform: translatex(0);
 }
@@ -77,6 +78,7 @@ iframe {
 
 .who, .email, .message {
     width: 75%;
+    position: relative;
 }
 
 .form label, .form input, .form textarea {
@@ -106,4 +108,37 @@ iframe {
     }
     .contact .instruction {
         height: 15vh;}
+}
+
+@media (min-width:360px) {
+    .contact h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (orientation:portrait) and (min-width:400px) {
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (orientation:portrait) and (min-width:768px) {
+    .contact section {
+        height: 60vh;
+    }
+    .contact .instruction {
+        height: 10vh;
+    }
+    .contact h2 {
+        font-size: 2rem;
+    }
+    .form_container {
+        font-size: 1.3rem;
+    }
+    .form input {
+        width: 60%;
+    }
+    .form button {
+        font-size: 1.2rem;
+    }
 }
