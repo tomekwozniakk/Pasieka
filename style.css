@@ -339,13 +339,13 @@ section.active {
     opacity: 1;
 }
 
-.left {
+main .left {
     position: relative;
     flex-basis: 20%;
     background-color: rgb(243, 232, 207);
 }
 
-.left h2 {
+main .left h2 {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -356,7 +356,7 @@ section.active {
     font-weight: bold;
 }
 
-.right {
+main .right {
     flex-basis: 80%;
     display: flex;
     align-items: center;
@@ -450,11 +450,11 @@ footer i {
         font-size: 1.1rem;
     }
 
-    .left h2 {
+    main .left h2 {
         font-size: 1.5rem;
     }
 
-    .right {
+    main .right {
         font-size: 1rem;
         padding: 10px 15px;
     }
@@ -502,11 +502,11 @@ footer i {
         font-size: 1.25rem;
     }
 
-    .left h2 {
+    main .left h2 {
         font-size: 1.6rem;
     }
 
-    .right {
+    main .right {
         font-size: 1.1rem;
     }
 }
@@ -522,11 +522,11 @@ footer i {
         font-size: 2.4rem;
     }
 
-    .left h2 {
+    main .left h2 {
         font-size: 1.8rem;
     }
 
-    .right {
+    main .right {
         font-size: 1.2rem;
     }
 
@@ -545,16 +545,16 @@ footer i {
         height: 20%;
     }
 
-    section {
+    main section {
         flex-direction: row;
     }
 
-    .left {
+    main .left {
         flex-basis: 30%;
         border-right: 4px solid rgb(255, 255, 255)
     }
 
-    .right {
+    main .right {
         flex-basis: 70%;
         border: none;
     }
@@ -588,11 +588,11 @@ footer i {
         font-size: 2.6rem;
     }
 
-    .left h2 {
+    main .left h2 {
         font-size: 2rem;
     }
 
-    .right {
+    main .right {
         font-size: 1.3rem;
     }
 
